@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dark mode</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+	<label class="switch">
+		<input type="checkbox">
+		<span class="slider round"></span>
+	</label>
+	<h1>hello world</h1>
+
+
+	<script type="text/javascript">
+		// onSetTheme(theme){
+		// 	let bgColor, textColor;
+		// 	switch(theme) {
+		// 		case light:
+		// 		bgColor = #FFF;
+		// 		break;
+		// 		case dark:
+		// 		bgColor = #000;
+		// 		break;
+		// 	}
+		// 	document.querySelector('body').style.setProperty('--bg-color', bgColor);
+		// }
+
+
+		var an = document.querySelector('.switch input');
+		an.addEventListener('click', function(){
+			if(an.checked==true){
+				document.querySelector('body').style.setProperty('--bg-color', '#000');
+				document.querySelector('body').style.setProperty('--text-color', '#fff');
+			}
+			else{
+				document.querySelector('body').style.setProperty('--bg-color', '#fff');
+				document.querySelector('body').style.setProperty('--text-color', '#000');
+
+			}
+		} );
+
+
+
+		function anj(){
+			
+
+		}
+
+
+
+		// console.log(an);
+	</script>
+</body>
+</html>
